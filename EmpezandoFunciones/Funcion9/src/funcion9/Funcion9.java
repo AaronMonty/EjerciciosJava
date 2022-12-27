@@ -29,33 +29,23 @@ public class Funcion9 {
         numero2 = entrada.nextInt();
         numero3 = entrada.nextInt();
 
-        resultadoFinal = numeroMinimo(numero1, numero2);
+        int auxiliar = mayor(numero3, numero3);
 
-        if (resultadoFinal < numero3) {
-
-            System.out.println("El numero minimo es " + resultadoFinal);
-
-        } else {
-
-            System.out.println("El numero minimo es " + numero3);
-        }
+        System.out.println("El mayor es: " + (mayor(auxiliar, numero3)));
 
     }
 
-    public static int numeroMinimo(int numeroUno, int numeroDos) {
+    public static int mayor(int numeroUno, int numeroDos) {
 
-        int minimo;
+        if (numeroUno > numeroDos) {
 
-        if (numeroUno < numeroDos) {
-
-            minimo = numeroUno;
+            return numeroUno;
 
         } else {
 
-            minimo = numeroDos;
+            return numeroDos;
         }
 
-        return minimo;
     }
 
 }

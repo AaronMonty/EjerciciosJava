@@ -36,7 +36,7 @@ public class Funcion21 {
         int opcion;
         System.out.println("Menu ");
 
-        System.out.println("1.Circuferencia\n2.Area");
+        System.out.println("1.Circunferencia\n2.Area");
         opcion = entrada.nextInt();
         menu(opcion);
         
