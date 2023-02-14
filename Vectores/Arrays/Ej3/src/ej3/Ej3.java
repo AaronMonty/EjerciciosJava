@@ -38,7 +38,8 @@ public class Ej3 {
         return vector;
 
     }
-
+   
+//    Hecho en 1 funcion
     public static void minimoMaximo(int[] vector) {
 
         int menor = vector[0];
@@ -61,6 +62,34 @@ public class Ej3 {
         System.out.println("El numero mayor del array es: " + mayor);
         System.out.println("El numero menor del array es: " + menor);
 
+    }
+//    Hecho en 2 funciones
+    public static int minimo(int[] vector) {
+
+        int menor = vector[0];
+
+        for (int i = 1; i < vector.length; i++) {
+
+            if (vector[i] < menor) {
+                menor = vector[i];
+            }
+
+        }
+        return menor;
+    }
+
+    public static int maximo(int[] vector) {
+
+        int mayor = vector[0];
+
+        for (int i = 1; i < vector.length; i++) {
+
+            if (vector[i] > mayor) {
+                mayor = vector[i];
+            }
+
+        }
+        return mayor;
     }
 
 }

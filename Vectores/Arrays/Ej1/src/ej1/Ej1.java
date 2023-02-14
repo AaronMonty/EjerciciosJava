@@ -25,6 +25,7 @@ public class Ej1 {
         //        int[] manera1={1,2,3};
         //        int[] manera2= new int[10];
         //        int[] manera3= manera2; //funcion();
+
     }
 
     public static int[] llenarArray(int numero) {
@@ -41,11 +42,19 @@ public class Ej1 {
 
     }
 
+//        Con For Each
+//    public static void EscribirForEach(int[] vector) {
+//
+//        for (int i : vector) {
+//            System.out.println(vector[i] + " ");
+//        }
+//        System.out.println();
+//    }
     public static void mostrarContenido(int[] vector) {
 
         for (int i = 0; i < vector.length; i++) {
 
-            System.out.println(vector[i]);
+            System.out.println(vector[i] + " ");
 
         }
 

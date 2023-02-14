@@ -19,33 +19,52 @@ public class Ej7 {
 
         Scanner entrada = new Scanner(System.in);
         int inicial, fin;
-        System.out.print("Dime un numero donde empiece el array: ");
+        System.out.print("Dime una posicion donde empiece el array: ");
         inicial = entrada.nextInt();
 
-        System.out.print("Dime otro numero donde quieres que acabe el array: ");
+        System.out.print("Dime otra posicion donde quieres que acabe el array: ");
         fin = entrada.nextInt();
-        mostrarContenido(llenarArray(inicial, fin));
+
+        crearVectorDesdePaQ(inicial, fin);
+
     }
 
-    public static int[] llenarArray(int inicial, int fin) {
-        int[] vector = new int[fin];
+    public static int[] crearVectorDesdePaQ(int P, int Q) {
 
-        for (int i=0; i < vector.length; i++) {
+        if (Q > P) {
+            int aux = P;
+            P = Q;
+            Q = aux;
+        }
 
-            vector[i] = i + 1;
+        int[] vector = new int[(P - Q) - 1];
+        for (int i = 0; i < vector.length; i++, P--) {
+            vector[i] = P;
         }
 
         return vector;
 
     }
 
-    public static void mostrarContenido(int[] vector) {
-
-        for (int i = 0; i < vector.length; i++) {
-
-            System.out.println(vector[i]);
-
-        }
-
-    }
+//    public static int[] llenarArray(int inicial, int fin) {
+//        int[] vector = new int[fin];
+//
+//        for (int i = 0; i < vector.length; i++) {
+//
+//            vector[i] = i;
+//        }
+//
+//        return vector;
+//
+//    }
+//
+//    public static void mostrarContenido(int[] vector) {
+//
+//        for (int i = 0; i < vector.length; i++) {
+//
+//            System.out.println(vector[i]);
+//
+//        }
+//
+//    }
 }
