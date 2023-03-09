@@ -31,6 +31,7 @@ public class Ej2 {
     
     public static String remplazar(String frase,char caracter1,char caracter2){
     
+        
         return frase = frase.replace(caracter1, caracter2);
         
     }

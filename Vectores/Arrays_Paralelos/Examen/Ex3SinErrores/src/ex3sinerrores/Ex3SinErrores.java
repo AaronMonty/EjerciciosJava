@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Aaron Monterroso Segura 13/02/2023
  */
 public class Ex3SinErrores {
-
+    
     public static String[] especie;
     public static int[] numeroDeEjemplares;
     public static boolean[] Peligroso;
@@ -39,7 +39,7 @@ public class Ex3SinErrores {
                 case 1:
                     System.out.println("Dime la ID donde rellenar el vector");
                     ID = entrada.nextInt();
-                    while (ID < 0 || ID > N) {
+                    while (ID < 0 || ID >=N) {
 
                         System.out.println("Introduciste valores incorrectos");
                         ID = entrada.nextInt();

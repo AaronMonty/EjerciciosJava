@@ -159,14 +159,14 @@ public class PracticandoParaElExamen {
 
     }
 
-    public static void mostrarAulas() {
-
-        for (int i = 0; i < 10; i++) {
-            if (DNIProfe1==DNI || DNIProfe2==DNI) {
-                
-            }
-        }
-        
-    }
+//    public static void mostrarAulas() {
+//
+//        for (int i = 0; i < 10; i++) {
+//            if (DNIProfe1==DNI || DNIProfe2==DNI) {
+//                
+//            }
+//        }
+//        
+//    }
 
 }

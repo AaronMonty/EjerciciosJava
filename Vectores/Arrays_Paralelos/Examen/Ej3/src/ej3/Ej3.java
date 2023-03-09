@@ -39,6 +39,7 @@ public class Ej3 {
                 case 1:
                     System.out.println("Dime la ID donde rellenar el vector");
                     ID = entrada.nextInt();
+                    //Error me falto un ID >=N
                     while (ID < 0 || ID > N) {
 
                         System.out.println("Introduciste valores incorrectos");
